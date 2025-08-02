@@ -110,10 +110,10 @@ int get_live_neighbors_count(int x, int y, int field[HEIGHT][WIDTH]) {
     // note: счетчик кол-ва живых
     int counter = 0;
 
-    for (int dx = -1; dx <= 1; dx++) {
-        for (int dy = -1; dy <= 1; dy++) {
-            // fixme: можно сильно упростить для понимания
-            if (dx != 0 || dy != 0) {
+    for (int dy = -1; dy <= 1; dy++) {
+        for (int dx = -1; dx <= 1; dx++) {
+            int isCenter = (dx == 0 && dy == 0);
+            if (!isCenter) {
                 counter += get_neighbor_status(x, y, dx, dy, field);
             }
         }
