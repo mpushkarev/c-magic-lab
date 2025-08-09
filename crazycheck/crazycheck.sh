@@ -1,11 +1,11 @@
 #!/bin/bash
 
 BOLD="\033[1m"
-GREEN='\033[0;32m'
-RED='\033[0;31m'
-YELLOW='\033[0;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+YELLOW="\033[0;33m"
+BLUE="\033[0;34m"
+NC="\033[0m"
 
 check_files_exist() {
     if ! find . -type f \( -name "*.c" -o -name "*.h" \) -print | grep -q .; then
@@ -54,7 +54,6 @@ check_gcc_compile() {
         echo -e "[${GREEN}OK${NC}] gcc ok"
     fi
 }
-
 
 echo -e "[${YELLOW}RUN${NC}] Working..."
 check_files_exist
