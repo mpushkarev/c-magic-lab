@@ -1,25 +1,26 @@
 #!/bin/bash
 
 BOLD="\033[1m"
-GREEN="\033[0;32m"
-RED="\033[0;31m"
-YELLOW="\033[0;33m"
-BLUE="\033[0;34m"
+BRED="\033[0;91m"
+BGREEN="\033[0;92m"
+BYELLOW="\033[0;93m"
+BBLUE="\033[0;94m"
+BCYAN="\033[0;96m"
 NC="\033[0m"
 
 print_run() {
     local text="$1"
-    echo -e "[${YELLOW}RUN${NC}] ${text}"
+    echo -e "[${BYELLOW}RUN${NC}] ${text}"
 }
 
 print_success() {
     local message="$1"
-    echo -e "[${GREEN}OK${NC}] ${message}"
+    echo -e "[${BGREEN}OK${NC}] ${message}"
 }
 
 print_error() {
     local message="$1"
-    echo -e "[${RED}FAIL${NC}] ${message}"
+    echo -e "[${BRED}FAIL${NC}] ${message}"
 }
 
 check_files_exist() {
