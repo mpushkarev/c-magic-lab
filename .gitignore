@@ -1,3 +1,4 @@
 *.out
 .DS_Store
-game_of_life
+game-of-life/game_of_life
+pong/pong
