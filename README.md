@@ -9,3 +9,7 @@ This is a utility for automated checking of C projects, focusing on style and co
 ## 🧬 Game of Life
 
 Game of Life started as a group project at School 21 and has since evolved into an independent initiative. The project is being gradually improved and extended beyond its original scope.
+
+## 🎮 Pong
+
+Pong started as a group project at School 21 and has since evolved into an independent initiative. The project is being gradually improved and extended beyond its original scope.
